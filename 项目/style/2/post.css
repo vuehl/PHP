@@ -1,0 +1,152 @@
+@charset 'utf-8';
+
+#post {
+	width:auto;
+	height:600px;
+	border:2px solid #ccc;
+	font-size:12px;
+	position: relative;
+}
+#post h2 {
+	text-indent:0;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:1px;
+}
+#post dl {
+  width:400px;
+  margin:0px auto;
+}
+#post dl dt {
+ text-align:center;
+ padding:10px 0;
+ font-weight:bold;
+}
+#post dl dd {
+ padding:5px 0;	
+}
+#post dl dd div#ubb {
+ width:400px;
+ height:26px;
+ border:1px dashed #333;
+ border-bottom:1px solid #666;
+ background:#eee;	
+}
+#post dl dd div#ubb img{
+ width:20px;
+ height:20px;
+ padding:3px 0 0 15px;	
+ cursor:pointer;
+}
+#post dl dd div#font {
+ display:none;
+ width:125px;
+ height:40px;
+ background:#eee;
+ border:1px dashed #333;
+ padding:8px;
+ line-height:20px;
+ position: absolute;
+ top:147px;
+ left:279px;	
+}
+#post dl dd div#font strong {
+ font-weight:normal;
+ background:#fff;
+ border:1px dashed #ccc;
+ cursor:pointer;
+}
+/*這个是QQ贴图的部分*/
+#post dl dd#q a {
+ text-decoration: none;
+ color:#333;	
+}
+#post dl dd#q a:hover {
+ color:#f60;	
+}
+#post dl dd div#color {
+ display:none;
+ width:80px;
+ height:100px;
+ background:#eee;
+ font-size:12px;
+ border:1px dashed #333;
+ padding:4px 0 0 4px;
+ position:absolute;
+ top:147px;
+ left:500px;	
+}
+#post dl dd div#color strong {
+border:1px dashed #999;
+display:block;
+width:12px;
+height:12px;
+margin:4px 0 0 4px;
+float:left;
+cursor:default;
+}
+#post dl dd div#color em {
+display:block;
+height:28px;
+width:80%;
+clear:both;
+}
+#post dl dd div#color em input {
+margin-top:10px;
+width:66px;
+height:20px;
+cursor:pointer;
+background:#fff;
+}
+#post dl dd textarea {
+ width:390px;
+ background:#fff;
+ border: 1px dashed #333;
+ border-top:none;
+ overflow-y:scroll;
+ padding:0px 5px;	
+}
+#post dl dd.face {
+ padding:5px 0 5px 120px;
+}
+#post dl dd.face img {
+	width:102px;
+	height:100px;
+	cursor:pointer;
+	padding:0 5px 0 5px;
+}
+#post dl dd input.text {
+ width:220px;
+ height:19px;
+ border:1px dashed #333;
+ background:#fff;
+}
+#post dl dd input.yzm {
+ width:60px;	
+}
+/*這个是验证码的部分的图片*/
+#post dl dd img#code {
+ position:relative;
+ top:8px;
+ cursor:pointer;
+}
+#post dl dd input.submit {
+ width:60px;
+ height:19px;
+ border:1px dashed #333;
+ background:#fff;
+ cursor:pointer;
+ color:#333;
+}
+#post dl dd input.submit:hover {
+ background:#eee;
+}
+
+
+
+
+
+
+
+
+

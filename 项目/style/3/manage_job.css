@@ -1,0 +1,23 @@
+@charset 'utf-8';
+#menber #menber_main table {
+	width:90%;
+	background:#ccc;
+	margin:10px auto;
+	text-align:center;
+}
+#menber #menber_main table th,#menber #menber_main table td {
+	background: #fff;
+	height:25px;
+	line-height:25px;
+}
+#menber #menber_main table td a {
+   text-decoration: none;
+   color:#333;
+}
+#menber #menber_main table td a:hover {
+	text-decoration:underline;
+}
+#menber #menber_main form {
+	text-align:center;
+}
+

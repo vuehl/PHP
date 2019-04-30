@@ -1,0 +1,324 @@
+@charset 'utf-8';
+#article {
+	width:auto;
+	min-height:800px;
+	border:2px solid #ccc;
+	font-size:12px;
+  position: relative;
+}
+#article h2 {
+	text-indent:0;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:1px;
+}
+#article img.nice {
+  position:absolute;
+  top:-30px;
+  left:600px;
+}
+#article img.hot {
+  position: absolute;
+  top:-30px;
+  left:700px;
+}
+#article #subject {
+}
+
+#article #subject dl{
+   width:170px;
+   padding:10px 0 0 45px;
+   float:left;
+}
+#article #subject dl dt {
+   width:150px;
+   margin:0 0 5px 0;  
+}
+#article #subject dl dt img {
+  margin:0 auto;
+  display: block;
+  width:80px;
+  height:80px;
+}
+#article #subject dl dd {
+  height:20px;
+  line-height:20px;
+  text-align:center;
+  width:85px; 
+  float:left;
+}
+#article #subject dl dd.email,#article #subject dl dd.url {
+ width:170px;
+ padding:5px 0 0 0;
+ text-align:left;
+ text-indent:5px;
+}
+#article #subject dl dd a {
+  color:#333;
+  text-decoration:none;
+}
+#article #subject dl dd.user {
+  width:170px;
+  float:none;
+  color:#f60;
+}
+
+/*這个是右边部分的内容*/
+#article div.content {
+  float:right;
+  width:680px;
+  padding:5px 20px 0 0;
+}
+#article div.content .user {
+ border-bottom:1px dashed #999;
+ background:url('../../image/menber.jpg') no-repeat left center;
+ padding:0 0 0 25px;
+ height:30px;
+ line-height:30px;
+}
+#article div.content .user span {
+  float:right;
+  color:#06f;
+}
+#article div.content h3 {
+ font-size:14px;
+ height:40px;
+ line-height:40px; 
+}
+#article div.content h3 span {
+  font-size:12px;
+  font-weight: normal;
+  color:#06f;
+}
+#article div.content h3 span a {
+  text-decoration: none;
+  color:#06f;
+}
+#article div.content h3 span a:hover {
+  text-decoration: underline;
+  color:#f60;
+}
+#article div.content .detail {
+  line-height:150%;
+  font-size:14px;
+}
+#article div.content .detail p {
+  color: #666;
+  width:60%;
+  border-top:1px dashed #666;
+  margin:5px 0;
+}
+#article div.content .detail a {
+  text-decoration: none;
+  color: blue;
+}
+#article div.content .detail a:hover {
+  color: #f60;
+  text-decoration:underline;
+}
+#article div.content .read {
+  font-size:14px;
+  color:#333;
+  padding:10px 0 0 0;
+}
+#article div.content .read p {
+  padding:0 0 15px 0;
+  text-align:right;
+  font-size:12px;
+}
+/*這个是回帖部分的内容*/
+#article p.line {
+  clear:both;
+  width:95%;
+  margin:0 auto;
+  height:10px;
+  border-bottom:1px dashed #333;
+
+}
+#article dl {
+  width:400px;
+  margin:0px auto;
+  position:relative;
+}
+#article dl dt {
+ text-align:center;
+ padding:10px 0;
+ font-weight:bold;
+}
+#article dl dd {
+ padding:5px 0; 
+}
+#article dl dd div#ubb {
+ width:400px;
+ height:26px;
+ border:1px dashed #333;
+ border-bottom:1px solid #666;
+ background:#eee; 
+}
+#article dl dd div#ubb img{
+ width:20px;
+ height:20px;
+ padding:3px 0 0 15px;  
+ cursor:pointer;
+}
+#article dl dd div#font {
+ display:none;
+ width:125px;
+ height:40px;
+ background:#eee;
+ border:1px dashed #333;
+ padding:8px;
+ line-height:20px;
+ position:absolute; 
+}
+#article dl dd div#font strong {
+ font-weight:normal;
+ background:#fff;
+ border:1px dashed #ccc;
+ cursor:pointer;
+}
+/*這个是QQ贴图的部分*/
+#article dl dd#q a {
+ text-decoration: none;
+ color:#333;  
+}
+#article dl dd#q a:hover {
+ color:#f60;  
+}
+#article dl dd div#color {
+ display:none;
+ width:80px;
+ height:100px;
+ background:#eee;
+ font-size:12px;
+ border:1px dashed #333;
+ padding:4px 0 0 4px;
+ position:absolute; 
+ top:88px;
+ left:210px; 
+}
+#article dl dd div#color strong {
+border:1px dashed #999;
+display:block;
+width:12px;
+height:12px;
+margin:4px 0 0 4px;
+float:left;
+cursor:default;
+}
+#article dl dd div#color em {
+display:block;
+height:28px;
+width:80%;
+clear:both;
+}
+#article dl dd div#color em input {
+margin-top:10px;
+width:66px;
+height:20px;
+cursor:pointer;
+background:#fff;
+}
+#article dl dd textarea {
+ width:390px;
+ background:#fff;
+ border: 1px dashed #333;
+ border-top:none;
+ overflow-y:scroll;
+ padding:0px 5px; 
+}
+#article dl dd.face {
+ padding:5px 0 5px 120px;
+}
+#article dl dd.face img {
+  width:102px;
+  height:100px;
+  cursor:pointer;
+  padding:0 5px 0 5px;
+}
+#article dl dd input.text {
+ width:220px;
+ height:19px;
+ border:1px dashed #333;
+ background:#fff;
+}
+#article dl dd input.yzm {
+ width:60px;  
+}
+/*這个是验证码的部分的图片*/
+#article dl dd img#code {
+ position:relative;
+ top:8px;
+ cursor:pointer;
+}
+#article dl dd input.submit {
+ width:60px;
+ height:19px;
+ border:1px dashed #333;
+ background:#fff;
+ cursor:pointer;
+ color:#333;
+}
+#article dl dd input.submit:hover {
+ background:#eee;
+}
+
+/*這个是进行回帖部分的样式*/
+#article div.re dl{
+   width:170px;
+   padding:10px 0 0 45px;
+   float:left;
+}
+#article div.re dl dt {
+   width:150px;
+   margin:0 0 5px 0;  
+}
+#article div.re dl dt img {
+  margin:0 auto;
+  display: block;
+  width:80px;
+  height:80px;
+}
+#article div.re dl dd {
+  height:20px;
+  line-height:20px;
+  text-align:center;
+  width:85px; 
+  float:left;
+}
+#article div.re dl dd.email,#article div.re dl dd.url {
+ width:170px;
+ padding:5px 0 0 0;
+ text-align:left;
+ text-indent:5px;
+}
+#article div.re dl dd a {
+  color:#333;
+  text-decoration:none;
+}
+#article div.re dl dd.user {
+  width:170px;
+  float:none;
+  color:#f60;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

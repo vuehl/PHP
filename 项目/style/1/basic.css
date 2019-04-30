@@ -1,0 +1,215 @@
+@charset 'utf-8';
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+	width:960px;
+	background:#fff;
+	margin:10px auto;
+	font-size:14px;
+}
+/*這个是标题的部分*/
+#header {
+  width:auto;
+  height:150px;
+  border:2px solid #ccc;
+  margin:10px 0;
+}
+
+#header h1 {
+	width:210px;
+	height:40px;
+	background:url('../../image/header_logo.png');
+	margin:40px 0 0 40px;
+	font-size:12px;
+}
+/*a 這个标签是让图片可以进行点击的效果*/
+#header h1 a {
+  width:210px;
+  height:40px;
+  display:block;
+  /*text-indent:-9999px;這个是让他显示在最下面,相当于隐藏了*/
+  text-indent:-9999px;
+}
+#header ul {
+  text-align:right;
+  padding:30px 50px 0 ;
+}
+#header ul li {
+  display:inline;
+  color:#666;
+  cursor:pointer;
+}
+#header ul li a{
+  text-decoration:none;
+  color:#333;
+}
+#header ul li a.manage {
+  color: red;
+}
+
+
+#header ul li a:hover {
+ text-decoration:underline;
+ color:#f00;
+}
+#header ul li strong.noread {
+  background:url(../../image/noread.jpg) no-repeat left center;
+  padding:0 0 0 15px;
+}
+#header ul li strong.read {
+  background:url(../../image/read.jpg) no-repeat left center;
+  padding:0 0 0 15px;
+}
+
+/*这个风格的部分*/
+#header ul li.skin {
+  position:relative;
+}
+#header ul li dl#skin {
+  position:absolute;
+  top:16px;
+  left:-30px;
+  border:1px dashed #333;
+  width:80px;
+  text-align:center;
+  background:#fff;
+  padding:5px;
+  z-index:1000;
+  display:none;
+}
+#header ul li dl#skin dd {
+  padding:2px;
+  color:#333;
+}
+h2 {
+	background:#eee;
+	font-size:14px;
+	height:25px;
+	line-height:25px;
+	text-indent:10px;
+}
+/*這个是发送短信的部分*/
+#menber {
+  width:auto;
+  height:600px;
+  border:2px solid #ccc;
+  font-size:12px;
+}
+#menber h2 {
+    text-indent:0;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+}
+#menber #menber_sidebar {
+    width:300px;
+    height: 500px;
+    border: 1px dashed #999;
+    margin:15px;
+    float:left;
+}
+#menber #menber_sidebar dl {
+    margin:15px auto;
+}
+#menber #menber_sidebar dl dt {
+    height:40px;
+    line-height:40px;
+    background:#999;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+}
+#menber #menber_sidebar dl dd {
+    height:40px;
+    line-height:40px;
+    background:#eee;
+    font-weight:bold;
+    text-align:center;
+}
+#menber #menber_sidebar dl dd a {
+    display:block;
+    text-decoration:none;
+    color:#333;
+}
+#menber #menber_sidebar dl dd a:hover{
+    background:#ccc;
+}
+#menber #menber_main {
+    width:590px;
+    height: 500px;
+    border: 1px dashed #999;
+    margin:15px;
+    float:right;
+}
+/*這个是页脚的部分*/
+#footer {
+ clear:both;
+ width:auto;
+ height:60px;
+ text-align:center;
+ padding:30px 0 0 0;
+}
+#footer p {
+ color:#666;
+ text-align:center;
+ letter-spacing: 2px;
+}
+
+/*這个是分页的部分页码*/
+#page_num {
+  height:20px;
+  clear:both;
+  padding:10px 0;
+  position:relative;
+}
+#page_num ul {
+  position:absolute;
+  right:10px;
+  height:20px;
+}
+#page_num ul li {
+ float:left;
+ width:28px;
+ height:20px;
+ list-style: none;
+}
+#page_num ul li a{
+ display:block;   /*這个是要设置为区块才能设置宽度和高度,记得a标签要设置*/
+ width:20px;
+ height:20px; 
+ line-height:20px;
+ text-align:center;
+ border:1px solid #333;
+ text-decoration:none;
+}
+#page_num ul li a:hover,#page_num ul li a.selected {
+  background:#666;
+  font-weight:bold;
+  color:#fff;
+}
+
+/*這个是文本的页码*/
+#page_text {
+  height:20px;
+  clear:both;
+  padding:10px 0;
+  font-size:12px;
+}
+#page_text ul {
+ text-align: center;
+}
+
+#page_text ul li {
+ display:inline;
+}
+#page_text ul li a {
+ color:#333;
+ text-decoration:none;
+}
+
+
+
+
